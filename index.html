@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row input-row text-center py-5">
+        <h1>IP Address Tracker</h1>
+        <div class="col-12 input-group input-group-lg">
+          <input
+            id="user-input"
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg"
+            placeholder="Search for any IP address"
+          />
+          <button
+            class="input-group-text"
+            type="submit"
+            id="inputGroup-sizing-lg"
+          >
+            >
+          </button>
+        </div>
+        <h3>
+          If the input is empty the app is going to search YOUR IP address
+        </h3>
+      </div>
+      <div class="row ip-info pb-4 align-items-center justify-content-center">
+        <div
+          class="info col-12 col-lg-3 align-items-center justify-content-center p-2"
+        >
+          <h5 class="text-body-secondary" id="ip-address-grey">IP ADDRESS</h5>
+          <h4 id="ip-address-header"></h4>
+        </div>
+        <div
+          class="info col-12 col-lg-3 align-items-center justify-content-center p-2"
+        >
+          <h5 class="text-body-secondary" id="location-grey">LOCATION</h5>
+          <h4 id="location-header"></h4>
+        </div>
+        <div
+          class="info col-12 col-lg-3 align-items-center justify-content-center p-2"
+        >
+          <h5 class="text-body-secondary" id="timezone-grey">TIMEZONE</h5>
+          <h4 id="timezone-header"></h4>
+        </div>
+        <div
+          class="info col-12 col-lg-3 align-items-center justify-content-center p-2"
+        >
+          <h5 class="text-body-secondary" id="isp-grey">ISP</h5>
+          <h4 id="isp-header"></h4>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Bruno Milošević</a>.
+    </div>
+    <script type="module" src="./assets/main.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </body>
+</html>
